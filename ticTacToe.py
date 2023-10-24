@@ -1,3 +1,4 @@
+# Most of this program is from p113 in Automate The Boring Stuff With Python by Al Sweigart
 theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
             'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
@@ -9,6 +10,7 @@ def printBoard(board):
     print('-+-+-')
     print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
 
+# I added the if/elif statements that determine whether the game has been won
 turn = 'X'
 for i in range(9):
     if theBoard['top-L'] == theBoard['top-M'] == theBoard['top-R'] and theBoard['top-L'] != ' ':
